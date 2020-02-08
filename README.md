@@ -9,11 +9,16 @@ poetry run python atcoder/abc153/c.py
 atcoder/keyence2020/b.py
 
 ## dynamical programming
+### typical
+atcoder/abc153/e.py
+
 ### LIS
 atcoder/chokudai_s001/h.py
 
 ## imos method
+### typical
 atcoder/chokudai_s001/i.py
 
 ## Recursive function
-atcoder/abc153.py
+### typical
+atcoder/abc153/d.py
