@@ -12,6 +12,9 @@ atcoder/keyence2020/b.py
 ### typical
 atcoder/abc153/e.py
 
+### digit DP
+atcoder/abc154/d.py
+
 ### LIS
 atcoder/chokudai_s001/h.py
 
