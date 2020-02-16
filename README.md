@@ -14,6 +14,7 @@ atcoder/abc153/e.py
 
 ### digit DP
 atcoder/abc154/d.py
+atcoder/abc155/e.py
 
 ### LIS
 atcoder/chokudai_s001/h.py
