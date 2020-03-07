@@ -5,7 +5,6 @@ def perm(n, k, p):
   return ret
 
 def comb(n, k, p):
-  """power_funcを用いて(nCk) mod p を求める"""
   a = perm(n, k, p)
   b = perm(k, k, p)
   return (a*pow(b, p-2, p))%p
