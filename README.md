@@ -26,3 +26,6 @@ atcoder/chokudai_s001/i.py
 ## Recursive function
 ### typical
 atcoder/abc153/d.py
+
+## permutation, combination
+atcoder/abc155/d.py
