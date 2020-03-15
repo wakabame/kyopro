@@ -27,5 +27,12 @@ atcoder/chokudai_s001/i.py
 ### typical
 atcoder/abc153/d.py
 
-## permutation, combination
+## mathmatical
+### permutation, combination
 atcoder/abc155/d.py
+
+## sys.stdin.read
+atcoder/tricky/a.py
+
+## rounding error
+atcoder/tricky/b.py
