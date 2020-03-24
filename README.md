@@ -23,6 +23,9 @@ atcoder/chokudai_s001/h.py
 ### typical
 atcoder/chokudai_s001/i.py
 
+## 尺取り法
+atcoder/abc098/d.py
+
 ## Recursive function
 ### typical
 atcoder/abc153/d.py
