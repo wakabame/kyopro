@@ -42,3 +42,7 @@ atcoder/tricky/b.py
 
 ## DFS
 atcoder/abc114/c.py
+
+# functions
+## Math
+power_func.py
