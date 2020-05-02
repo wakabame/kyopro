@@ -54,6 +54,9 @@ atcoder/abc114/c.py
 ## Math
 power_func.py
 
+## sort by argument
+atcoder/abc139/f.py 
+
 # standard
 ## Counter
 atcoder/arc103/c.py
