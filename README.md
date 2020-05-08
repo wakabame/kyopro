@@ -13,6 +13,7 @@ atcoder/keyence2020/b.py
 atcoder/abc151/d.py
 
 ### DFS
+atcoder/panasonic2020/d.py
 atcoder/abc157/d.py
 
 ## dynamical programming
