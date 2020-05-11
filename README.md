@@ -4,6 +4,10 @@ pyenv shell 3.4.3
 poetry run python atcoder/abc153/c.py
 ```
 
+## bit search
+atcoder/abc167/c.py
+
+
 ## greedy
 ### section scheduling
 atcoder/keyence2020/b.py
