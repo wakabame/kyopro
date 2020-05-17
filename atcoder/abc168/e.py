@@ -2,34 +2,32 @@ from math import gcd
 from collections import defaultdict
 
 def to_irreducible(a, b):
-    from math import gcd
     if a == 0:
-        return [0, 1]
+        return (0, 1)
     GCD = gcd(a, b)
-    return [a//GCD, b//GCD]
+    return (a//GCD, b//GCD)
 
 MOD = 10**9 + 7
 N = int(input())
-daiichi_dict = defaultdict(int)
-daini_dict = defaultdict(int)
+quadrant1 = defaultdict(int)
+quadrant2 = defaultdict(int)
 zero_cases = 0
 
 for i in range(N):
     a, b = map(int, input().split())
     if a == 0 and b == 0:
         zero_cases += 1
-    elif a * b >=0 and b != 0:
-        a, b = to_irreducible(abs(a), abs(b))
-        daiichi_dict[(a,b)] += 1
+    elif a * b >= 0 and b != 0:
+        irr = to_irreducible(abs(a), abs(b))
+        quadrant1[irr] += 1
     else:
-        a, b = to_irreducible(abs(b), abs(a))
-        daini_dict[(a,b)] += 1
-        daiichi_dict[(a,b)] += 0
-
+        irr = to_irreducible(abs(b), abs(a))
+        quadrant2[irr] += 1
+        quadrant1[irr] += 0
 
 ans = 1 
-for key, value_daiichi in daiichi_dict.items():
-    value_daini = daini_dict[key]
-    ans *= (2**value_daiichi + 2**value_daini -1)
+for key, v1 in quadrant1.items():
+    v2 = quadrant2[key]
+    ans *= (2**v1 + 2**v2 -1)
     ans %= MOD
 print((ans+zero_cases-1) % MOD)
