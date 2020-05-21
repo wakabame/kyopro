@@ -45,6 +45,9 @@ atcoder/abc098/d.py
 atcoder/abc153/d.py
 
 ## mathmatical
+### Number Theory (Legendre theorem)
+atcoder/abc148/e.py
+
 ### permutation, combination
 atcoder/abc155/d.py
 
