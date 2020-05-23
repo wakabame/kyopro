@@ -23,6 +23,9 @@ atcoder/abc165/c.py
 atcoder/abc157/d.py
 
 ## dynamical programming
+### recursive
+atcoder/agc044/a.py
+
 ### typical
 atcoder/abc153/e.py
 
