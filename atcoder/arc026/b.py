@@ -1,3 +1,5 @@
+N = int(input())
+
 def divisors(n):
     ret1 = []
     ret2 = []
@@ -12,3 +14,11 @@ def divisors(n):
     ret2.reverse()
     return ret1 + ret2
     # nの約数を列挙するO(n^{1/2})
+
+div_sum = sum(divisors(N)[:-1])
+if N == div_sum:
+    print('Perfect')
+elif N > div_sum:
+    print('Deficient')
+else:
+    print('Abundant')

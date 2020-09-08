@@ -1,7 +1,7 @@
 # How to ecec
 ```
 pyenv shell 3.4.3
-poetry run python atcoder/abc153/c.py
+python atcoder/abc153/c.py
 ```
 
 ## bit search
@@ -66,6 +66,7 @@ atcoder/abc114/c.py
 # functions
 ## Math
 power_func.py
+divisors.py
 
 ## sort by argument
 atcoder/abc139/f.py 
