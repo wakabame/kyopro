@@ -7,7 +7,7 @@ def perm(n, k, p):
 def comb(n, k, p):
   a = perm(n, k, p)
   b = perm(k, k, p)
-  return (a*pow(b, p-2, p))%p
+  return (a*pow(b, -1, p))%p
 
 S = int(input())
 
