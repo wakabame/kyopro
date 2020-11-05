@@ -15,3 +15,5 @@ def power_func(a, n, p):
         if bi[i] == "1":
             res = (res*a) % p
     return res
+
+# pow(a, n, p)
