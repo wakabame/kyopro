@@ -1,9 +1,15 @@
 # How to execute
 
+```shell
+# edit python code
+pyenv shell 3.4.3
+python atcoder_contest/abc192/e.py
 ```
 
-pyenv shell 3.4.3
-python atcoder/abc153/c.py
+```shell
+# edit c++ code
+[Ctrl] + [Shift] + [b]
+./problem.exe
 ```
 
 ## bit search
@@ -103,7 +109,7 @@ divisors.py
 
 ## sort by argument
 
-atcoder/abc139/f.py 
+atcoder/abc139/f.py
 
 ## irreducible fraction(既約分数)
 
