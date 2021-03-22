@@ -44,6 +44,7 @@ atcoder/abc157/d.py
 ### recursive
 
 atcoder/agc044/a.py
+atcoder/abc196/d.py
 
 ### typical
 
