@@ -17,94 +17,108 @@ python atcoder_contest/abc192/e.py
 kyopuro_edu_90/sol/001.py
 atcoder_contest/abc023/d.py
 
-## bit search
+## bit 探索
 
-atcoder/abc167/c.py
+atcoder_contest/abc167/c.py
 
-## greedy
+## 貪欲法
 
-### section scheduling
+### 区間スケジューリング
 
-atcoder/keyence2020/b.py
+atcoder_contest/keyence2020/b.py
 
-## graph
+## グラフアルゴリズム
 
-### BFS
+### 幅優先探索 BFS
 
-atcoder/abc151/d.py
-atcoder/abc168/d.py
+atcoder_contest/abc151/d.py
+atcoder_contest/abc168/d.py
 
 ### 0-1BFS
 
-atcoder/abc176/
+atcoder_contest/abc176/
 
-### DFS
+### 深さ優先探索 DFS
 
-atcoder/panasonic2020/d.py
-atcoder/abc165/c.py
-atcoder/abc157/d.py
+atcoder_contest/panasonic2020/d.py
+atcoder_contest/abc165/c.py
+atcoder_contest/abc157/d.py
 
-## dynamical programming
+## 動的計画法 dynamical programming
 
-### recursive
+### 再帰関数
 
-atcoder/agc044/a.py
-atcoder/abc196/d.py
+atcoder_contest/agc044/a.py
+atcoder_contest/abc196/d.py
 
-### typical
+### 典型
 
-atcoder/abc153/e.py
+atcoder_contest/abc153/e.py
 
-### digit DP
+### 桁 DP
 
-atcoder/abc154/d.py
-atcoder/abc155/e.py
+atcoder_contest/abc154/d.py
+atcoder_contest/abc155/e.py
 
 ### LIS
 
-atcoder/chokudai_s001/h.py
+atcoder_contest/chokudai_s001/h.py
 
-## imos method
+## いもす法
 
 ### typical
 
-atcoder/chokudai_s001/i.py
+atcoder_contest/chokudai_s001/i.py
 
 ## 尺取り法
 
-atcoder/abc098/d.py
+atcoder_contest/abc098/d.py
 
-## Recursive function
+## 再帰関数
 
 ### typical
 
-atcoder/abc153/d.py
+atcoder_contest/abc153/d.py
 
-## mathmatical
+## 数学関係
 
 ### 素因数分解
 
-atcoder/abc177/e.py
+atcoder_contest/abc177/e.py
 
-### Number Theory (Legendre theorem)
+### 初等数論 (Legendre theorem)
 
-atcoder/abc148/e.py
+atcoder_contest/abc148/e.py
 
-### permutation, combination
+### 順列・組合せ
 
-atcoder/abc155/d.py
+atcoder_contest/abc155/d.py
 
 ## sys.stdin.read
 
-atcoder/tricky/a.py
+atcoder_contest/tricky/a.py
 
-## rounding error
+## 丸め誤差 rounding error
 
-atcoder/tricky/b.py
+atcoder_contest/tricky/b.py
 
-## DFS
+## 深さ優先探索 DFS
 
-atcoder/abc114/c.py
+atcoder_contest/abc114/c.py
+
+## 偏角ソート
+
+atcoder_contest/abc139/f.py
+
+## irreducible fraction(既約分数)
+
+atcoder_contest/abc168/d.py
+
+# 標準関数
+
+## Counter
+
+atcoder_contest/arc103/c.py
 
 # functions
 
@@ -112,17 +126,3 @@ atcoder/abc114/c.py
 
 power_func.py
 divisors.py
-
-## sort by argument
-
-atcoder/abc139/f.py
-
-## irreducible fraction(既約分数)
-
-atcoder/abc168/d.py
-
-# standard
-
-## Counter
-
-atcoder/arc103/c.py
