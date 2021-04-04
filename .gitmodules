@@ -1,3 +1,4 @@
 [submodule "kyopuro_edu_90"]
 	path = kyopuro_edu_90
 	url = git@github.com:wakabame/kyopro_educational_90.git
+	branch = main
