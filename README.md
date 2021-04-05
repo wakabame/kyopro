@@ -21,6 +21,9 @@ atcoder_contest/abc023/d.py
 
 atcoder_contest/abc167/c.py
 
+## 全探索
+kyopuro_edu_90/sol/002.py
+
 ## 貪欲法
 
 ### 区間スケジューリング
