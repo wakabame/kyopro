@@ -66,6 +66,7 @@ atcoder_contest/abc153/e.py
 
 ### 桁 DP
 
+kyopuro_edu_90/sol/005-01.py
 atcoder_contest/abc154/d.py
 atcoder_contest/abc155/e.py
 
@@ -102,6 +103,15 @@ atcoder_contest/abc148/e.py
 ### 順列・組合せ
 
 atcoder_contest/abc155/d.py
+
+### 行列累乗
+
+kyopuro_edu_90/sol/005-02.py
+atcoder_contest/abc009/d.py
+
+### 半環
+
+atcoder_contest/abc009/d.py
 
 ## sys.stdin.read
 
