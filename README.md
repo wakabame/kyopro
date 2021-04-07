@@ -15,6 +15,7 @@ python atcoder_contest/abc192/e.py
 ## 二分探索
 
 kyopuro_edu_90/sol/001.py
+kyopuro_edu_90/sol/007.py
 atcoder_contest/abc023/d.py
 
 ## bit 探索
@@ -116,6 +117,10 @@ atcoder_contest/abc009/d.py
 ## sys.stdin.read
 
 atcoder_contest/tricky/a.py
+
+### numba.jit (3重ループ)
+
+atcoder_contest/abc009/d.py
 
 ## 丸め誤差 rounding error
 
