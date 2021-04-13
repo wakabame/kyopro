@@ -49,6 +49,9 @@ atcoder_contest/panasonic2020/d.py
 atcoder_contest/abc165/c.py
 atcoder_contest/abc157/d.py
 
+### ダイクストラ法
+kyopuro_edu_90/sol/013.py
+
 #### 木
 
 kyopuro_edu_90/sol/003.py
