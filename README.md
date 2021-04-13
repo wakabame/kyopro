@@ -12,6 +12,10 @@ python atcoder_contest/abc192/e.py
 ./problem.exe
 ```
 
+## Union-Find
+
+kyopuro_edu_90/sol/012.py
+
 ## 二分探索
 
 kyopuro_edu_90/sol/001.py
