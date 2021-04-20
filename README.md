@@ -72,6 +72,7 @@ atcoder_contest/abc196/d.py
 ### 典型
 
 atcoder_contest/abc153/e.py
+atcoder_contest/dp/n.py
 
 ### 桁 DP
 
