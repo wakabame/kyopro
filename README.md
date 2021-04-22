@@ -21,6 +21,8 @@ kyopuro_edu_90/sol/012.py
 kyopuro_edu_90/sol/001.py
 kyopuro_edu_90/sol/007.py
 atcoder_contest/abc023/d.py
+joi2008/c.py
+- bisect を用いた実装
 
 ## bit 探索
 
@@ -57,6 +59,11 @@ atcoder_contest/abc157/d.py
 
 kyopuro_edu_90/sol/013.py
 
+### 強連結成分分解
+
+kyopuro_edu_90/sol/021.py
+- scipy を用いた実装
+
 #### 木
 
 kyopuro_edu_90/sol/003.py
@@ -72,6 +79,10 @@ atcoder_contest/abc196/d.py
 ### 典型
 
 atcoder_contest/abc153/e.py
+
+### 区間DP
+
+kyopuro_edu_90/sol/019.py
 atcoder_contest/dp/n.py
 
 ### 桁 DP
