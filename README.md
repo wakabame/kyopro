@@ -157,6 +157,7 @@ atcoder_contest/abc114/c.py
 ## 偏角ソート
 
 atcoder_contest/abc139/f.py
+kyopuro_edu_90/sol/009.py
 
 ## irreducible fraction(既約分数)
 
