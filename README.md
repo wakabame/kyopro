@@ -23,6 +23,7 @@ kyopuro_edu_90/sol/007.py
 atcoder_contest/abc023/d.py
 joi2008/c.py
 - bisect を用いた実装
+atcoder_contest/abc026/d.py
 
 ## bit 探索
 
