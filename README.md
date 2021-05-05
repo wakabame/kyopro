@@ -60,6 +60,8 @@ kyopuro_edu_90/sol/026.py
 ### ダイクストラ法
 
 kyopuro_edu_90/sol/013.py
+atcoder_contest/zone2021/e.py
+- 辺を増やさないために、頂点を倍加する
 
 ### 強連結成分分解
 
@@ -81,6 +83,10 @@ atcoder_contest/abc196/d.py
 ### 典型
 
 atcoder_contest/abc153/e.py
+
+### Nim, Grundy数
+
+kyopuro_edu_90/sol/031.py
 
 ### 区間DP
 
