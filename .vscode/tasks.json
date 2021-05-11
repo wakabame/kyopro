@@ -21,6 +21,7 @@
                 "'${workspaceFolder}\\problem.exe'`",
                 "`wslpath",
                 "'${file}'`",
+                "-DDEBUG_",
             ],
             "group": {
                 "kind": "build",
