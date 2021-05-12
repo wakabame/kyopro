@@ -12,6 +12,9 @@ python atcoder_contest/abc192/e.py
 ./problem.exe
 ```
 
+## セグメント木
+kyopuro_edu_90/pysol/037.py
+
 ## Union-Find
 
 kyopuro_edu_90/sol/012.py
@@ -112,6 +115,7 @@ atcoder_contest/chokudai_s001/i.py
 ## 尺取り法
 
 atcoder_contest/abc098/d.py
+kyopuro_edu_90/pysol/034.py
 
 ## 再帰関数
 
@@ -174,6 +178,10 @@ atcoder_contest/abc168/d.py
 ## Counter
 
 atcoder_contest/arc103/c.py
+
+## math.gcd
+
+kyopuro_edu/pysol/038.py
 
 # functions
 
