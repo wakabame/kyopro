@@ -60,7 +60,8 @@ atcoder_contest/abc176/
 atcoder_contest/panasonic2020/d.py
 atcoder_contest/abc165/c.py
 atcoder_contest/abc157/d.py
-kyopuro_edu_90/sol/026.py
+kyopuro_edu_90/pysol/026.py
+kyopuro_edu_90/pysol/039.py
 
 ### ダイクストラ法
 
