@@ -16,6 +16,7 @@ python atcoder_contest/abc192/e.py
 
 kyopuro_edu_90/pysol/037.py
 atcoder_contest/abc170/e.py
+atcoder_library_practice_contest/J_Segment_Tree.py
 
 ## Union-Find
 
