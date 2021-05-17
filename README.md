@@ -24,6 +24,7 @@ atcoder_library_practice_contest/B_Fenwick_Tree.py
 
 ## Union-Find
 
+atcoder_library_practice_contest/A_Disjoint_Set_Union.py
 kyopuro_edu_90/sol/012.py
 
 ## 二分探索
