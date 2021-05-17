@@ -18,6 +18,10 @@ kyopuro_edu_90/pysol/037.py
 atcoder_contest/abc170/e.py
 atcoder_library_practice_contest/J_Segment_Tree.py
 
+## BIT(binary indexed Tree)
+
+atcoder_library_practice_contest/B_Fenwick_Tree.py
+
 ## Union-Find
 
 kyopuro_edu_90/sol/012.py
