@@ -199,3 +199,7 @@ kyopuro_edu/pysol/038.py
 
 power_func.py
 divisors.py
+
+## 部分集合の部分集合を列挙
+
+kyopuro_edu/pysol/045.py
