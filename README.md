@@ -69,6 +69,8 @@ atcoder_contest/abc165/c.py
 atcoder_contest/abc157/d.py
 kyopuro_edu_90/pysol/026.py
 kyopuro_edu_90/pysol/039.py
+atcoder_contest/abc198/e.py
+- オイラーツアーなので、再帰
 
 ### ダイクストラ法
 
