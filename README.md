@@ -117,6 +117,10 @@ kyopuro_edu_90/sol/005-01.py
 atcoder_contest/abc154/d.py
 atcoder_contest/abc155/e.py
 
+### DP 復元
+
+kyopuro_edu_90/pysol/056.py
+
 ### LIS
 
 atcoder_contest/chokudai_s001/h.py
@@ -189,6 +193,10 @@ kyopuro_edu_90/sol/009.py
 atcoder_contest/abc168/d.py
 
 # 標準関数
+
+## defaultdict, 周期性メモ
+
+atcoder_contest/abc179/e.@y
 
 ## Counter
 
