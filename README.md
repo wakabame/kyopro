@@ -124,6 +124,7 @@ kyopuro_edu_90/pysol/056.py
 ### LIS
 
 atcoder_contest/chokudai_s001/h.py
+atcoder_contest/abc006/d.py
 kyopuro_edu/pysol/060.py
 atcoder_contest/agc019/c.py
 
