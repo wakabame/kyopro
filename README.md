@@ -36,6 +36,9 @@ joi2008/c.py
 - bisect を用いた実装
 atcoder_contest/abc026/d.py
 
+## 三分探索
+atcoder_contest/arc122/b.py
+
 ## bit 探索
 
 atcoder_contest/abc167/c.py
