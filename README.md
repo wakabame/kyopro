@@ -174,6 +174,11 @@ atcoder_contest/abc009/d.py
 
 atcoder_contest/abc009/d.py
 
+### 最大公倍数と包除原理
+
+atcoder_contest/abc162/e.py
+atcoder_contest/abc206/e.py
+
 ## sys.stdin.read
 
 atcoder_contest/tricky/a.py
