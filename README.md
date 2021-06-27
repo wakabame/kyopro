@@ -127,7 +127,7 @@ kyopuro_edu_90/pysol/056.py
 
 ### メモ
 
-atocoder_contest/abc207/e.py
+atocoder_contest/abc207/e.py (未消化)
 
 ### LIS
 
