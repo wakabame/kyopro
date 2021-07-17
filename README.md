@@ -85,6 +85,10 @@ kyopuro_edu_90/sol/013.py
 atcoder_contest/zone2021/e.py
 - 辺を増やさないために、頂点を倍加する
 
+### クラスカル法（短いedge から貪欲に追加することで, 最小全域木を作る）
+
+atcoder_contest/abc210/e.py
+
 ### 強連結成分分解
 
 kyopuro_edu_90/sol/021.py
