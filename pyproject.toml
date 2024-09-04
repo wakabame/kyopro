@@ -1,16 +1,20 @@
-[tool.poetry]
+[project]
 name = "kyopro"
 version = "0.1.0"
 description = ""
-authors = ["wakabame"]
+authors = [{ name = "wakabame", email = "wakabame@gmail.com" }]
 
-[tool.poetry.dependencies]
-python = "3.8.1"
+requires-python = "==3.11.4"
 
-[tool.poetry.dev-dependencies]
-black = "^21.5b1"
-flake8 = "^3.9.2"
+dependencies = []
+
+[tool.rye]
+managed = true
+dev-dependencies = []
 
 [build-system]
-requires = ["poetry>=0.12"]
-build-backend = "poetry.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/foo"]
