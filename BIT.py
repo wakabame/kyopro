@@ -6,6 +6,7 @@ class Bit:
     add(i, x) i番目の要素にxを加える...log(n)
       1-indexed であることに注意する(区緩和のbit演算のため)
     """
+
     def __init__(self, n):
         self.size = n
         self.tree = [0] * (n + 1)

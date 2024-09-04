@@ -17,7 +17,7 @@ while A and B and C:
         c = C.pop()
         if c > b:
             break
-    if c > b> a:
+    if c > b > a:
         ans += 1
 
 print(ans)

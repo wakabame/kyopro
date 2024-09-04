@@ -1,4 +1,5 @@
 from collections import defaultdict
+
 N, K = map(int, input().split())
 digit = len(str(N))
 li = [int(s) for s in str(N)]
@@ -16,19 +17,19 @@ for i in range(1, len(li)):
     # smaller
     # smaller -> smaller は, 0 から 9 まで見てよい
     for k in range(10):
-        for key, value in dp[i-1][0].items():
-            dp[i][0][k*key] += value
+        for key, value in dp[i - 1][0].items():
+            dp[i][0][k * key] += value
     # none -> smaller (先頭が i 桁目のもの)
     for k in range(1, 10):
         dp[i][0][k] += 1
     # equal -> smaller は i 桁目が 0 から top 未満
     for k in range(top):
-        for key, value in dp[i-1][1].items():
-            dp[i][0][k*key] += value
+        for key, value in dp[i - 1][1].items():
+            dp[i][0][k * key] += value
 
     # equal -> equal は i 桁目は top
-    for key, value in dp[i-1][1].items():
-        dp[i][1][top*key] += value
+    for key, value in dp[i - 1][1].items():
+        dp[i][1][top * key] += value
 
 ans = 0
 for key, value in dp[-1][0].items():

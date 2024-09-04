@@ -11,6 +11,6 @@ for i in range(N):
     if flag:
         ans += music[i][1]
     elif number == music[i][0]:
-        flag = True 
+        flag = True
 
 print(ans)

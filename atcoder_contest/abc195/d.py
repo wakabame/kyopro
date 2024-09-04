@@ -8,7 +8,7 @@ WV.sort(key=lambda x: -x[1])
 
 for _ in range(Q):
     L, R = map(int, input().split())
-    boxes = X[:L-1] + X[R:]
+    boxes = X[: L - 1] + X[R:]
     boxes.sort()
     used = [False] * len(boxes)
 

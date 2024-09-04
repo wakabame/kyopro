@@ -6,6 +6,7 @@ A = list(map(int, input().split()))
 C = list(map(int, input().split()))
 MOD = 1 << 64  # 使っていない
 
+
 # DP の漸化式が同じ場合は, 行列の繰り返し二乗法によって求めることができる
 # 非負整数に対して, 和: xor, 積: and の半環（xorの単位元は -1(unsigned int)）とみなすことができる
 def power_matrix_under_mod(mat, n, p):
@@ -41,12 +42,11 @@ def calc_and_xor(mat, arr):
 
 # 行列の累乗を行う
 dp_matrix = np.zeros((K, K), dtype=np.uint32)
-for i in range(K-1):
-    dp_matrix[i][i+1] = -1
+for i in range(K - 1):
+    dp_matrix[i][i + 1] = -1
 dp_matrix[-1] = np.array(C[::-1])
 
 if M <= K:
-    print(A[M-1])
+    print(A[M - 1])
 else:
-    print(calc_and_xor(power_matrix_under_mod(dp_matrix, M-K, MOD), A))
-
+    print(calc_and_xor(power_matrix_under_mod(dp_matrix, M - K, MOD), A))

@@ -10,7 +10,7 @@ for h in range(H):
         if h == 0:
             cumsum_table[0][h][w] = 1
         else:
-            cumsum_table[0][h][w] = cumsum_table[0][h-1][w] + 1
+            cumsum_table[0][h][w] = cumsum_table[0][h - 1][w] + 1
 
 for h in range(H):
     for w in range(W):
@@ -19,25 +19,25 @@ for h in range(H):
         if w == 0:
             cumsum_table[1][h][w] = 1
         else:
-            cumsum_table[1][h][w] = cumsum_table[1][h][w-1] + 1
+            cumsum_table[1][h][w] = cumsum_table[1][h][w - 1] + 1
 
 for h in range(H)[::-1]:
     for w in range(W)[::-1]:
         if S[h][w] == "#":
             continue
-        if h == H-1:
+        if h == H - 1:
             cumsum_table[2][h][w] = 1
         else:
-            cumsum_table[2][h][w] = cumsum_table[2][h+1][w] + 1
+            cumsum_table[2][h][w] = cumsum_table[2][h + 1][w] + 1
 
 for h in range(H)[::-1]:
     for w in range(W)[::-1]:
         if S[h][w] == "#":
             continue
-        if w == W-1:
+        if w == W - 1:
             cumsum_table[3][h][w] = 1
         else:
-            cumsum_table[3][h][w] = cumsum_table[3][h][w+1] + 1
+            cumsum_table[3][h][w] = cumsum_table[3][h][w + 1] + 1
 
 ans = 0
 for h in range(H):

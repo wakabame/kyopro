@@ -1,4 +1,5 @@
 from collections import defaultdict
+
 N = int(input())
 K = int(input())
 
@@ -11,9 +12,9 @@ length_to_set = defaultdict(set)
 for h in range(N):
     for w in range(N):
         if S[h][w] == ".":
-            length_to_set[0].add((frozenset({(h,w)})))
+            length_to_set[0].add((frozenset({(h, w)})))
 
-for k in range(K-1):
+for k in range(K - 1):
     for path in length_to_set[k]:
         for h, w in path:
             for i in range(4):
@@ -27,6 +28,6 @@ for k in range(K-1):
                     continue
                 path_ = set(path)
                 path_.add((h_, w_))
-                length_to_set[k+1].add(frozenset(path_))
+                length_to_set[k + 1].add(frozenset(path_))
 
-print(len(length_to_set[K-1]))
+print(len(length_to_set[K - 1]))

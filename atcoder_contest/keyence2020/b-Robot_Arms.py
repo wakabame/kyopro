@@ -3,7 +3,7 @@ segment = []
 
 for _ in range(N):
     x, l = map(int, input().split())
-    segment.append([max(0, x-l), x+l])
+    segment.append([max(0, x - l), x + l])
 
 segment.sort(key=lambda seg: seg[1])
 

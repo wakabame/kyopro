@@ -57,8 +57,8 @@ N, Q = map(int, input().split())
 uf = UnionFind(N)
 
 for _ in range(Q):
-  t, u, v = map(int, input().split())
-  if t == 1:
-    print(+(uf.same(u, v)))
-  elif t == 0:
-    uf.union(u, v)
+    t, u, v = map(int, input().split())
+    if t == 1:
+        print(+(uf.same(u, v)))
+    elif t == 0:
+        uf.union(u, v)

@@ -1,8 +1,10 @@
 N = int(input())
 C = [int(input()) for _ in range(N)]
 
+
 def LIS(L):
     from bisect import bisect_left
+
     seq = []
     for ai in L:
         pos = bisect_left(seq, ai)
@@ -11,5 +13,6 @@ def LIS(L):
         else:
             seq[pos] = ai
     return len(seq)
+
 
 print(N - LIS(C))

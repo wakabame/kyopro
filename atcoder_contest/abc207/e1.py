@@ -9,11 +9,11 @@ dp[0][0] = 1
 
 for i in range(N):
     for j in range(N):
-        for k in range(1, i+2):
+        for k in range(1, i + 2):
             # 最後の区間幅をkと考える
             # A[i+1-k] から A[i] までの総和が j+1 のときに, 合算
-            if sum(A[i + 1- k : i + 1]) % (j + 1) == 0:
-                dp[i + 1][j + 1] += dp[i + 1- k][j]
+            if sum(A[i + 1 - k : i + 1]) % (j + 1) == 0:
+                dp[i + 1][j + 1] += dp[i + 1 - k][j]
                 dp[i + 1][j + 1] %= MOD
 
-print(sum(dp[-1])%MOD)
+print(sum(dp[-1]) % MOD)

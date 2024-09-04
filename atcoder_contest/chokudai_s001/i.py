@@ -11,8 +11,9 @@ while True:
         curr -= a[st]
         st += 1
     elif curr <= N:
-        if gl == N-1: break
-        curr += a[gl+1]
+        if gl == N - 1:
+            break
+        curr += a[gl + 1]
         gl += 1
     elif curr >= N:
         curr -= a[st]

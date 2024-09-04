@@ -4,8 +4,8 @@ minus = []
 
 for _ in range(N):
     x, y = map(int, input().split())
-    pulls += [x+y]
-    minus += [x-y]
+    pulls += [x + y]
+    minus += [x - y]
 
 pulls.sort()
 minus.sort()

@@ -5,9 +5,9 @@ def divisors(n):
     while i**2 <= n:
         if i**2 == n:
             ret1 += [i]
-        elif n%i == 0:
+        elif n % i == 0:
             ret1 += [i]
-            ret2 += [n//i]
+            ret2 += [n // i]
         i += 1
     ret2.reverse()
     return ret1 + ret2
