@@ -1,11 +1,13 @@
-from math import gcd 
+from math import gcd
 from collections import defaultdict
+
 
 def to_irreducible(a, b):
     if a == 0:
         return (0, 1)
     GCD = gcd(a, b)
-    return (a//GCD, b//GCD)
+    return (a // GCD, b // GCD)
+
 
 MOD = 10**9 + 7
 N = int(input())
@@ -25,9 +27,9 @@ for i in range(N):
         quadrant2[irr] += 1
         quadrant1[irr] += 0
 
-ans = 1 
+ans = 1
 for key, v1 in quadrant1.items():
     v2 = quadrant2[key]
-    ans *= (2**v1 + 2**v2 -1)
+    ans *= 2**v1 + 2**v2 - 1
     ans %= MOD
-print((ans+zero_cases-1) % MOD)
+print((ans + zero_cases - 1) % MOD)

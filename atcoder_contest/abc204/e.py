@@ -8,14 +8,15 @@ N, M = map(int, input().split())
 
 
 def calc_best_time(d):
-  ret_cand = []
-  for time in range(int(d**0.5)-1, int(d**0.5) + 3):
-    if time < 0:
-      continue
-    ret_cand += [[time+d//(time+1), time]]
-  ret_cand.sort()
+    ret_cand = []
+    for time in range(int(d**0.5) - 1, int(d**0.5) + 3):
+        if time < 0:
+            continue
+        ret_cand += [[time + d // (time + 1), time]]
+    ret_cand.sort()
 
-  return ret_cand[0][1]
+    return ret_cand[0][1]
+
 
 adj = [[] for i in range(N)]  # 始点を i とするedgeの集合
 for _ in range(M):
@@ -39,13 +40,13 @@ while hq:
         continue
     confirm[v] = True
     for w, c, d, best_time in adj[v]:
-        wait_time = max(best_time - dist,0)
-        cost = wait_time + c + d//(dist + wait_time + 1)
+        wait_time = max(best_time - dist, 0)
+        cost = wait_time + c + d // (dist + wait_time + 1)
         if not confirm[w] and dist + cost < distance[w]:
             distance[w] = dist + cost
             heappush(hq, (distance[w], w))
 
 if distance[-1] == float("inf"):
-  print(-1)
+    print(-1)
 else:
-  print(distance[-1])
+    print(distance[-1])

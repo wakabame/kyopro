@@ -9,12 +9,12 @@ for _ in range(N):
     y_diff = y - Y
     if abs(x_diff) + abs(y_diff) > duration:
         flag = False
-    if (x_diff + y_diff + duration)%2:
+    if (x_diff + y_diff + duration) % 2:
         flag = False
     X = x
     Y = y
     T = t
-        
+
 if flag:
     print("Yes")
 else:

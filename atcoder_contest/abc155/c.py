@@ -10,9 +10,9 @@ for i in range(N):
 
 dictlist = []
 for key, value in dic.items():
-    temp = [key,value]
+    temp = [key, value]
     dictlist.append(temp)
-dictlist.sort(key=lambda x:(-x[1], x[0]))
+dictlist.sort(key=lambda x: (-x[1], x[0]))
 
 top = dictlist[0][1]
 for i in range(len(dictlist)):

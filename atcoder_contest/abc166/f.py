@@ -26,13 +26,13 @@ for i in range(N):
     elif ABC[u] + ABC[v] == 2:
         # 両方1の場合だけケアが必要
         if ABC[u] * ABC[v] == 1:
-            if i == N-1:
+            if i == N - 1:
                 if ABC[u] > 0:
                     ans_list += [s[i][1]]
                 else:
                     ans_list += [s[i][0]]
             else:
-                if s[i][1] in s[i+1]:
+                if s[i][1] in s[i + 1]:
                     ans_list += [s[i][1]]
                     ABC[u] -= 1
                     ABC[v] += 1

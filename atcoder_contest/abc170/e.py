@@ -63,7 +63,7 @@ import heapq
 from collections import defaultdict
 
 N, Q = map(int, input().split())
-b_max = 2 * (10 ** 5)
+b_max = 2 * (10**5)
 infant_rates = []
 class_dict = [defaultdict(int) for _ in range(b_max)]
 class_scores_hq = [[] for _ in range(b_max)]

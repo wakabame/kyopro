@@ -13,7 +13,7 @@ for left in range(N):
 
     ans += right - left
 
-    if right == left :
+    if right == left:
         right += 1
     else:
         sum_n -= A[left]

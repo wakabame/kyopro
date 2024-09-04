@@ -18,10 +18,10 @@ memo[1][0] = 1
 
 for i in range(N):
     for j in range(N):
-        dp[i+1][j+1] = memo[j+1][cumsum[i+1]%(j+1)]
+        dp[i + 1][j + 1] = memo[j + 1][cumsum[i + 1] % (j + 1)]
 
-    for j in range(N-1):
-        memo[j+2][cumsum[i+1]%(j+2)] += dp[i+1][j+1]
-        memo[j+2][cumsum[i+1]%(j+2)] %= MOD
+    for j in range(N - 1):
+        memo[j + 2][cumsum[i + 1] % (j + 2)] += dp[i + 1][j + 1]
+        memo[j + 2][cumsum[i + 1] % (j + 2)] %= MOD
 
-print(sum(dp[-1])%MOD)
+print(sum(dp[-1]) % MOD)

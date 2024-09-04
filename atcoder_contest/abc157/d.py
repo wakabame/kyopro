@@ -2,8 +2,8 @@ N, M, K = map(int, input().split())
 friends_table = [[] for i in range(N)]
 for _ in range(M):
     a, b = map(int, input().split())
-    friends_table[a-1] += [b-1]
-    friends_table[b-1] += [a-1]
+    friends_table[a - 1] += [b - 1]
+    friends_table[b - 1] += [a - 1]
 
 group_list = [i for i in range(N)]
 friends_candidate = [[] for i in range(N)]
@@ -29,9 +29,9 @@ for i in range(N):
 blocks_table = [[] for i in range(N)]
 for _ in range(K):
     a, b = map(int, input().split())
-    if group_list[a-1] == group_list[b-1]:
-        blocks_table[a-1] += [b-1]
-        blocks_table[b-1] += [a-1]
+    if group_list[a - 1] == group_list[b - 1]:
+        blocks_table[a - 1] += [b - 1]
+        blocks_table[b - 1] += [a - 1]
 
 for i in range(N):
-    print(len(friends_candidate[i]) - len(friends_table[i]) - len(blocks_table[i])-1)
+    print(len(friends_candidate[i]) - len(friends_table[i]) - len(blocks_table[i]) - 1)

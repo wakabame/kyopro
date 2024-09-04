@@ -1,7 +1,7 @@
 N = int(input())
 A = list(map(int, input().split()))
 
-MOD = 10 ** 9 + 7
+MOD = 10**9 + 7
 ans = 0
 for digit in range(60):
     # 桁を固定して, その桁の貢献を計算する

@@ -11,10 +11,10 @@ for i in range(N):
     dp[i][i] = 0
 
 
-for h in range(N): # 幅 h = j - i について考える
-    for i in range(N-h):
+for h in range(N):  # 幅 h = j - i について考える
+    for i in range(N - h):
         j = i + h
-        for k in range(i, j): # [i,j] を [i,k], [k+1, j] に分割する
-            dp[i][j] = min(dp[i][j], dp[i][k] + dp[k+1][j] + weight[j+1] - weight[i])
+        for k in range(i, j):  # [i,j] を [i,k], [k+1, j] に分割する
+            dp[i][j] = min(dp[i][j], dp[i][k] + dp[k + 1][j] + weight[j + 1] - weight[i])
 
 print(dp[0][-1])

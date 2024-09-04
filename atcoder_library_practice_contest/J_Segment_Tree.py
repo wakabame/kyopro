@@ -1,6 +1,7 @@
 N, Q = map(int, input().split())
 A = list(map(int, input().split()))
 
+
 class SegTree:
     """
     __init__(init_val): 配列init_valで初期化 O(N)
@@ -61,6 +62,7 @@ class SegTree:
             r >>= 1
         return res
 
+
 segtree = SegTree(A, max, -float("INF"))
 ans = []
 for _ in range(Q):
@@ -68,21 +70,21 @@ for _ in range(Q):
 
     if t == 1:
         # x-1 の一点更新
-        segtree.update(x-1, y)
+        segtree.update(x - 1, y)
 
     elif t == 2:
         # [x-1, y) の最大値
-        ans += [segtree.query(x-1, y)]
+        ans += [segtree.query(x - 1, y)]
 
     elif t == 3:
         # [x-1, end) であって, value が y 以上の index
         start = x - 1
         end = N + 1
         while end - start > 1:
-            mid = (start + end)// 2
+            mid = (start + end) // 2
             if segtree.query(start, mid) < y:
                 start = mid
             else:
                 end = mid
-        ans += [start+1]
+        ans += [start + 1]
 print(*ans)

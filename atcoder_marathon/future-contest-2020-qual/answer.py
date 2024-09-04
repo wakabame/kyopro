@@ -11,6 +11,7 @@ curr_x = 0
 curr_y = 0
 ans_str = ""
 
+
 def move_x(curr_x, dx, ans_str):
     curr_x += dx
     if dx > 0:
@@ -20,6 +21,7 @@ def move_x(curr_x, dx, ans_str):
 
     return curr_x, ans_str
 
+
 def move_y(curr_y, dy, ans_str):
     curr_y += dy
     if dy > 0:
@@ -28,12 +30,13 @@ def move_y(curr_y, dy, ans_str):
         ans_str += "L" * (-dy)
 
     return curr_y, ans_str
-    
+
+
 def move_and_append(curr_x, curr_y, i, ans_str):
     x, y = X[i], Y[i]
 
-    if (i < N-1 and curr_y == Y[i+1]) and (curr_x-X[i+1])*(X[i+1]- x) > 0:
-        dx = X[i+1] - curr_x
+    if (i < N - 1 and curr_y == Y[i + 1]) and (curr_x - X[i + 1]) * (X[i + 1] - x) > 0:
+        dx = X[i + 1] - curr_x
         curr_x, ans_str = move_x(curr_x, dx, ans_str)
         ans_str += "I"
         # TODO: 最後の空き地まで移動しておろす
@@ -47,17 +50,17 @@ def move_and_append(curr_x, curr_y, i, ans_str):
         """
         ans_str += "O"
         # TODO: X[i+1] を書き換える
-        table[curr_x][curr_y] = i+1
-        X[i+1] = curr_x
+        table[curr_x][curr_y] = i + 1
+        X[i + 1] = curr_x
 
         dx = X[i] - curr_x
         curr_x, ans_str = move_x(curr_x, dx, ans_str)
     else:
         dx = x - curr_x
         curr_x, ans_str = move_x(curr_x, dx, ans_str)
-    
-    if (i < N-1 and curr_x == X[i+1]) and (curr_y-Y[i+1])*(Y[i+1]- y) > 0:
-        dy = Y[i+1] - curr_y
+
+    if (i < N - 1 and curr_x == X[i + 1]) and (curr_y - Y[i + 1]) * (Y[i + 1] - y) > 0:
+        dy = Y[i + 1] - curr_y
         curr_y, ans_str = move_y(curr_y, dy, ans_str)
         ans_str += "I"
         # TODO: 最後の空き地まで移動する
@@ -67,10 +70,11 @@ def move_and_append(curr_x, curr_y, i, ans_str):
         curr_y, ans_str = move_y(curr_y, dy, ans_str)
     else:
         dy = y - curr_y
-        
+
         curr_y, ans_str = move_y(curr_y, dy, ans_str)
 
     return curr_x, curr_y, ans_str
+
 
 for i in range(N):
     curr_x, curr_y, ans_str = move_and_append(curr_x, curr_y, i, ans_str)

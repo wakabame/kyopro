@@ -5,6 +5,7 @@ class Bit:
     sum(i) i 番目までの和...log(n)
     add(i, x) i番目の要素にxを加える...log(n)
     """
+
     def __init__(self, n):
         self.size = n
         self.tree = [0] * (n + 1)
@@ -21,16 +22,17 @@ class Bit:
             self.tree[i] += x
             i += i & -i
 
+
 N, Q = map(int, input().split())
 A = list(map(int, input().split()))
 
 bit = Bit(N)
 for i, a in enumerate(A):
-    bit.add(i+1, a)
+    bit.add(i + 1, a)
 
 for _ in range(Q):
     t, x, y = map(int, input().split())
     if t == 0:
-        bit.add(x+1, y)
+        bit.add(x + 1, y)
     elif t == 1:
         print(bit.sum(y) - bit.sum(x))

@@ -2,10 +2,11 @@ N, M, Q = map(int, input().split())
 a, b, c, d = [], [], [], []
 for i in range(Q):
     a_, b_, c_, d_ = map(int, input().split())
-    a += [a_-1]
-    b += [b_-1]
+    a += [a_ - 1]
+    b += [b_ - 1]
     c += [c_]
     d += [d_]
+
 
 def score(A):
     ret = 0
@@ -24,10 +25,11 @@ def dfs(li):
             st = 1
         else:
             st = li[-1]
-        for i in range(st, M+1):
+        for i in range(st, M + 1):
             li.append(i)
             dfs(li)
             li.pop()
+
 
 ans = 0
 dfs([])
